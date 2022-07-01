@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RASPAD SPACE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>img[alt="www.000webhost.com"] {display: none;}</style>
+		<style>.disclaimer {display: none;}</style>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript" src="assets/js/qrcode.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index">RASPAD SPACE</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Меню</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index">Главная</a></li>
+										<!--	<li><a href="timepad">Афиша</a></li>
+										  <li><a href="kino">Расписание кинопоказов</a></li> -->
+											<li><a href="payments">Купить билеты</a></li>
+											<li><a href="map">Как добраться</a></li>
+											<li><a href="activ">Прочая активность</a></li>
+											<li><a href="gallery">Фотогалерея</a></li>
+											<li><a href="archive">Архив мероприятий</a></li>
+
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Купить билеты</h2>
+
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Спасибо за покупку!</h3>
+
+									<p><b>Ваш билет на двух человек в виде QR кода представлен ниже.</b> Пожалуйста сохраните его или сделайте скриншот страницы, по нему вы попадете на мероприятие.</p>
+
+									<hr>
+									<div align="center">
+										<sub>Это ваш билет</sub>
+										<div id="qrcode" style="width:256px; height:256px; margin-top:15px;"></div>
+										<sub>Это ваш билет</sub>
+								</div>
+								<hr>
+								<p>Не показывайте билет тому, кому вы не доверяете и не выкладывайте в социальных сетях. QR код — уникальная комбинация цифр, по которой вы попадёте на мероприятие. Копировать и перепродавать
+										билет запрещено.</p>
+									<hr>
+									<p><b>Точные координаты проведения мероприятия смотрите в телеграм канале, по кнопке ниже.</b></p>
+									<div align="center">
+										<a href="https://t.me/joinchat/riZEiRxyH3NmZDZi" class="button big" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Координаты места</a>
+									</div>
+									<hr>
+
+
+									<p>Хотите обсудить мероприятия или найти себе компанию? Заходите в телеграм чат для гостей.</p>
+									<div align="center">
+										<a href="https://t.me/rozdani" class="button big" target="_blank"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Чат для гостей</a>
+									</div>
+									<hr>
+
+									<h2>Следите за новостями в наших аккаунтах</h2>
+
+
+									<a href="https://t.me/poluraspad_rave" class="button fit" target="_blank"><i class="fa fa-telegram fa-2x"></i></a>
+									<a href="https://vk.com/club202746494" class="button fit" target="_blanlk"><i class="fa fa-vk fa-2x"></i></a>
+									<a href="https://youtube.com/channel/UCjCpI3MKRSKzW5xXFuYWP8w" class="button fit" target="_blank"><i class="fa fa-youtube fa-2x"></i></a>
+
+<hr>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<ul class="copyright">
+							<li>Design: <a href="https://vakarian.website/">vakarian.website</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	width: 256,
+				height: 256,
+				colorDark : "#20272e",
+
+});
+
+function makeCode () {
+	function randomNumber(len) {
+            var randomNumber;
+            var n = '';
+
+            for(var count = 0; count < len; count++) {
+                randomNumber = Math.floor(Math.random() * 10);
+                n += randomNumber.toString();
+            }
+            return n;
+        }
+
+        var value = randomNumber(13);
+            var elText = "RASPAD_" + value + "_SPACE";
+
+            qrcode.makeCode(elText);
+        }
+
+makeCode();
+
+$("#text").
+	on("blur", function () {
+		makeCode();
+	}).
+	on("keydown", function (e) {
+		if (e.keyCode == 13) {
+			makeCode();
+		}
+	});
+</script>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(73092148, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/73092148" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+	</body>
+</html>
