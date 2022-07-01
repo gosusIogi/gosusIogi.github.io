@@ -1,0 +1,78 @@
+img {
+max-width: 100%;
+display: inline-block;
+}
+
+@media (min-width: 700px) {
+img {
+max-width: 90%;
+}
+}
+
+@media (min-width: 1000px) {
+img {
+max-width: 40%;
+}
+
+}
+@media (min-width: 1920px) {
+img {
+  max-width: 50%;
+}
+@media (min-width: 2500px) {
+  img {
+    max-width: 80%;
+  }
+  @media (min-width: 3800px) {
+    img {
+      max-width: 100%;
+    }
+}
+
+details summary::-webkit-details-marker {
+display:none;
+list-style-type: none;
+
+}
+
+summary{
+outline:none;
+}
+
+u {
+-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+transition: color 0.2s ease, border-bottom-color 0.2s ease;
+border-bottom: dotted 1px;
+color: inherit;
+text-decoration: none;
+}
+
+u:hover {
+border-bottom-color: transparent;
+}
+sub {
+font-size: 0.6em;
+position: relative;
+top: 0.5em;
+}
+
+.frame_blc{
+  overflow:hidden;
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+}
+.frame_blc iframe {
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+}
+
+summary::marker {
+font-size:0em;
+}
