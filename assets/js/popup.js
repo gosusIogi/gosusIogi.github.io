@@ -12,13 +12,20 @@ $('.pop-up span').click(function() {
   $('.button.big').show(0);
 });
 
-var text = document.getElementById("inputText");
+var text1 = document.getElementById("inputText1");
+var text2 = document.getElementById("inputText2");
 
 /* return button to variable btn */
-var btn = document.getElementById("copyText");
+var btn1 = document.getElementById("copyText1");
+var btn2 = document.getElementById("copyText2");
 
 /* call function on button click */
-btn.onclick = function() {
-  text.select();    
+btn1.onclick = function() {
+  text1.select();
+  document.execCommand("copy");
+}
+
+btn2.onclick = function() {
+  text2.select();
   document.execCommand("copy");
 }
