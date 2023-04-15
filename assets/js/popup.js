@@ -14,10 +14,12 @@ $('.pop-up span').click(function() {
 
 var text1 = document.getElementById("inputText1");
 var text2 = document.getElementById("inputText2");
+var text3 = document.getElementById("inputText3");
 
 /* return button to variable btn */
 var btn1 = document.getElementById("copyText1");
 var btn2 = document.getElementById("copyText2");
+var btn3 = document.getElementById("copyText3");
 
 /* call function on button click */
 btn1.onclick = function() {
@@ -27,5 +29,10 @@ btn1.onclick = function() {
 
 btn2.onclick = function() {
   text2.select();
+  document.execCommand("copy");
+}
+
+btn3.onclick = function() {
+  text3.select();
   document.execCommand("copy");
 }
